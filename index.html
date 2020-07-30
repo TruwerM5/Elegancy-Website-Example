@@ -93,15 +93,17 @@
             id assumenda facere. Tempora nihil ullam, optio laborum nam
             a harum obcaecati placeat aperiam!</p>
             <div id="cards">
-              <div class="personal-card"
-              v-for="card in cards">
-                <a href="#"><img :src="card.img" alt="card.img"></a>
-                <div class="card-text dark-bg">
-                  <span class="orange-header">{{card.position}}</span>
-                  <h3><a href="#">{{card.name}}</a></h3>
-                  <p>{{card.description}}</p>
+                <div class="row">
+                  <div class="personal-card col-md-4 col-sm-12"
+                  v-for="card in cards">
+                    <a href="#"><img :src="card.img" alt="card.img"></a>
+                    <div class="card-text dark-bg">
+                      <span class="orange-header">{{card.position}}</span>
+                      <h3><a href="#">{{card.name}}</a></h3>
+                      <p>{{card.description}}</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
         </div>
       </div>
@@ -113,6 +115,52 @@
         <div class="col-md-8 col-sm-9">
           <h6 class="orange-header">last post</h6>
           <h2>We Like to Write</h2>
+          <div class="last-post grid">
+            <div class="last-post-img">
+              <img src="img/last-post.jpg" alt="last-post">
+            </div>
+            <div class="dark-bg last-post-text">
+              <span class="date">14 september 2019</span>
+              <h3>Change Your Space</h3>
+              <p>Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua</p>
+                <button>Read</button>
+            </div>
+          </div>
+          <button>More From Our Blog</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12">
+          <h6 class="orange-header">contact us</h6>
+          <h2>Work With Us</h2>
+          <img src="img/map.jpg" alt="map">
+          <div class="contacts dark-bg">
+            <div>
+              <h6>Location</h6>
+              <p>198 East 21th Street,<br> New York, NY 10010</p>
+            </div>
+            <div>
+              <h6>Phone</h6>
+              <p>+88 (0) 101 0000000</p>
+              <p>+88 (0) 101 0000000</p>
+            </div>
+            <div>
+              <h6>fax</h6>
+              <p>+88 (0) 202 0000 000</p>
+              <p>+88 (0) 202 0000 000</p>
+            </div>
+            <div>
+              <h6>email</h6>
+              <p>ilsur2000.2016@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

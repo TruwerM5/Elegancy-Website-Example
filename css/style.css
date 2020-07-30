@@ -15,6 +15,10 @@
   background-color: #f9f9f9 !important;
 }
 
+h2 {
+  font-weight: 900;
+}
+
 a:hover {
   text-decoration: none !important;
 }
@@ -39,10 +43,15 @@ section button {
 section button:focus {
   outline: none;
 }
+section button:hover {
+  color: #fff;
+  background-color: #4d5c66;
+  transition: 0.3s;
+}
 
 section:not(#header) {
   padding: 20px 0 20px 0;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .orange-header {
@@ -151,17 +160,10 @@ header a.navbar-brand:hover {
 }
 
 #cards {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 1vw;
-  height: 400px;
   text-align: left;
 }
 #cards .card-text {
   padding: 5px;
-  clear: both;
 }
 #cards a {
   color: inherit;
@@ -177,8 +179,43 @@ header a.navbar-brand:hover {
   object-position: center 0;
 }
 
-@media (max-width: 575px) {
-  #cards {
+.last-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0;
+}
+.last-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.last-post .last-post-text {
+  padding: 2em;
+  text-align: left;
+}
+
+#contact-us img {
+  width: 100%;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2vw;
+  padding: 1em 0;
+}
+.contacts h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.contacts p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .last-post {
     grid-template-columns: 1fr !important;
   }
 }
