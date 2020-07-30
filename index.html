@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Elegancy</title>
+  <link rel="shortcut icon" href="img/icon-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <section id="header">
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a href="index.html" class="navbar-brand">ELEGANT</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            MENU
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav text-center ml-auto mr-auto">
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">about</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="project.html" class="nav-link">project</a>
+              </li>
+              <li class="nav-item">
+                <a href="work.html" class="nav-link">work</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        </div>
+    </header>
+    <div class="container">
+      <h1>Say <i>Haloa</i> to your Portfolio</h1>
+    </div>
+  </section>
+  <section id="tell-the-world">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12">
+          <h6 class="orange-header">who we are</h6>
+          <h2>Tell The World About Yourself</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in r
+            eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.</p>
+            <button class="extra">Read More About Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="amazing-work">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-12">
+          <h6 class="orange-header">what we do</h6>
+          <h2>Show Your Amazing Work</h2>
+        </div>
+      </div>
+    </div>
+    <div id="grid">
+      <div class="container">
+      <div class="row justify-content-center">
+          <grid v-for="item in gridItems"
+            class="col-md-3 col-sm-12"
+            :key="item.id"
+            :bg="item.img"></grid>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="amazing-people">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-9">
+          <h6 class="orange-header">who we are</h6>
+          <h2>The Amazing People Behind This</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Autem, quisquam, veniam! Natus, quis nemo ipsum cupiditate
+            id assumenda facere. Tempora nihil ullam, optio laborum nam
+            a harum obcaecati placeat aperiam!</p>
+            <div id="cards">
+              <div class="personal-card"
+              v-for="card in cards">
+                <a href="#"><img :src="card.img" alt="card.img"></a>
+                <div class="card-text dark-bg">
+                  <span class="orange-header">{{card.position}}</span>
+                  <h3><a href="#">{{card.name}}</a></h3>
+                  <p>{{card.description}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="last-post">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-sm-9">
+          <h6 class="orange-header">last post</h6>
+          <h2>We Like to Write</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
