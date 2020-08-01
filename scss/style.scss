@@ -148,6 +148,9 @@ header{
 }
 #cards{
   text-align: left;
+  .personal-card{
+    margin-bottom: 20px;
+  }
   .card-text{
     padding: 5px;
   }
@@ -188,8 +191,8 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-row-gap: 2vw;
-  padding: 1em 0;
+  grid-gap: 2vw;
+  padding: 1em;
   h6{
     text-transform: uppercase;
     font-size: 12px;
@@ -199,8 +202,23 @@ header{
     margin:0;
   }
 }
+footer{
+  color:$main-text-color;
+  font-size: 14px;
+  padding: 2em 0;
+  text-align: center;
+  a{
+    color:inherit;
+  }
+  ul{
+    padding: 0;
+  }
+  li{
+    display: inline;
+  }
+}
 @media (max-width: 767px){
-  .last-post{
+  .grid{
     grid-template-columns: 1fr !important;
   }
 }

@@ -162,6 +162,9 @@ header a.navbar-brand:hover {
 #cards {
   text-align: left;
 }
+#cards .personal-card {
+  margin-bottom: 20px;
+}
 #cards .card-text {
   padding: 5px;
 }
@@ -202,8 +205,8 @@ header a.navbar-brand:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-row-gap: 2vw;
-  padding: 1em 0;
+  grid-gap: 2vw;
+  padding: 1em;
 }
 .contacts h6 {
   text-transform: uppercase;
@@ -214,8 +217,24 @@ header a.navbar-brand:hover {
   margin: 0;
 }
 
+footer {
+  color: #4d5c66;
+  font-size: 14px;
+  padding: 2em 0;
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  display: inline;
+}
+
 @media (max-width: 767px) {
-  .last-post {
+  .grid {
     grid-template-columns: 1fr !important;
   }
 }
