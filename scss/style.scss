@@ -46,7 +46,7 @@ section{
     }
   }
 }
-section:not(#header-index){
+section:not(.header){
   padding: $section-paddings 0 $section-paddings 0;
   margin-bottom: $section-margins;
 }
@@ -86,6 +86,9 @@ h1{
 }
 #header-about{
   background-image: url(../img/background-header-about.jpg);
+}
+#header-blog{
+  background-image: url(../img/blog-header.jpg);
 }
 header{
   background-color: rgba(60, 104, 125, 0.5);
@@ -246,6 +249,20 @@ footer{
       content: '-';
       margin-right: 10px;
     }
+  }
+}
+#blog{
+
+}
+.post{
+  text-align: left;
+  background-color: #fff;
+  padding: 2em;
+  img{
+    width: 100%;
+  }
+  .post-text{
+    padding: 2em 0;
   }
 }
 @media (max-width: 767px){
